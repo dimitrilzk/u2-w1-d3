@@ -13,3 +13,15 @@ const avanti = function () {
   const paginaCorrente = tutteLePagine[numeroDiPagina];
   paginaCorrente.classList.add("mostra");
 };
+
+const indietro = function () {
+  for (let i = 0; i < tutteLePagine.length; i++) {
+    tutteLePagine[i].classList.remove("mostra");
+  }
+  numeroDiPagina--;
+  if (numeroDiPagina >= tutteLePagine.lenght) {
+    numeroDiPagina = 0;
+  }
+  const paginaCorrente = tutteLePagine[numeroDiPagina];
+  paginaCorrente.classList.add("mostra");
+};
