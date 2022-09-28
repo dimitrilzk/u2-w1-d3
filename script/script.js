@@ -14,8 +14,7 @@ function mostraImmagine() {
   numeroDiPagina = numeroDiPagina + 1;
   let immagineCorrente = document.getElementById("im" + numeroDiPagina);
   immagineCorrente.style.display = "flex";
-  //   let im1 = document.getElementById("im1");
-  //   im1.style.display = "flex";
-  //   let im2 = document.getElementById("im2");
-  //   im2.style.display = "flex";
+  if (immagineCorrente > numeroDiPagina) {
+    immagineCorrente.style.display = "none";
+  }
 }
