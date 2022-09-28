@@ -22,6 +22,9 @@ button {
     border-radius: 20px;
     margin: 20px;
 }
-#slider div {
+.slider-item {
     display: none;
+}
+.mostra {
+    display: block;
 }
